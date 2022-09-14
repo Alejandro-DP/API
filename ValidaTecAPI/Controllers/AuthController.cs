@@ -64,7 +64,7 @@ namespace ValidaTecAPI.Controllers
                 var token = new JwtSecurityTokenHandler().WriteToken(tokens);
                 //return Ok(new JwtSecurityTokenHandler().WriteToken(token));
 
-                return Ok(new LoginCTDO() { status = "sucess", userName = login.LastName + " " + (login.Name), isAdmin = true, token = token });
+                return Ok(new LoginCTDO() { status = "success", userName = login.LastName + " " + (login.Name), isAdmin = true, token = token });
             }
         }
            
